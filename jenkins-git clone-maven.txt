@@ -1,0 +1,33 @@
+create Jenkins in Jenkins server
+create clone in git server
+install plugins - java int and git int
+
+in jen server
+yum install git
+yum install maven
+vim .etc/fstab
+write tmpfs /tml tmpfs 
+mvn -v
+copy java path and maven path
+paste in Jenkins tools' jdk and maven
+in maven untick install auto
+
+add webhook
+
+new item
+maven
+paste https link of own repo
+master to main
+only tick GitHub hook
+in goals and options - clean installs
+
+apply save
+
+in Jenkins terminal
+systemctl restart Jenkins
+reboot
+
+paste instance
+sudo su -
+systemctl enable Jenkins
+systemctl start jenkins
